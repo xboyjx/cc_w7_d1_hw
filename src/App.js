@@ -33,15 +33,16 @@ function App() {
     <>
       <h1>To-Do list</h1>
 
-      <ul>
-        {taskNodes}
-      </ul>
 
       <form onSubmit={saveNewTask}>
         <label htmlFor='new-task'>Add a New Task</label>
         <input id='new-task' type='text' value={newTask} onChange={handleTaskInput}/>
         <input type='submit' value='Save New Task'/>
       </form>
+
+      <ul>
+        {taskNodes}
+      </ul>
     </>
   );
 }
